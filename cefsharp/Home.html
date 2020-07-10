@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3>Added Items</h3>
+    <br />
+    <br />
+    <div id="items"></div>
+</body>
+</html>
+<script src="Scripts/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var a = JSON.parse(sendobj.Array());
+        for (var i = 0; i < a.length; i++) {
+            $('#items').append($('<div>' + a[i] + '</div>'));
+        }
+    });
+</script>
